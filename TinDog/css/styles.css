@@ -1,0 +1,33 @@
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    size: 3rem;
+    line-height: 1.5;
+    color: white;
+    margin: 40px auto 40px;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.btn {
+    margin: 10px 10px;
+}
+
+#mainHeading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#phonepic {
+    transform: rotate(20deg);
+    padding: 50px;
+}
