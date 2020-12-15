@@ -8,14 +8,19 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    size: 3rem;
+    font-size: 3rem;
     line-height: 1.5;
     color: white;
     margin: 40px auto 40px;
 }
+h2{
+    font-family: 'Montserrat',sans-serif;
+    font-size:   1.5rem;
+    line-height: 1.5;
+}
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .btn {
@@ -27,7 +32,143 @@ h1 {
     font-weight: bold;
 }
 
-#phonepic {
-    transform: rotate(20deg);
-    padding: 50px;
+.phonepic {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
+
+
+/* Navigation */
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+
+/* Download Buttons */
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Features */
+
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icons {
+    color: #ef8172;
+    margin: 10px 0;
+}
+.icons:hover{
+    color:#ff4c68
+}
+
+.feature-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.feature-description {
+    color: #8f8f8f
+}
+
+
+/* testimonials */
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+/* press */
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-img{
+width: 15%;
+margin: 20px 20px 50px;
+}
+/* Pricing Section */
+#pricing{
+    padding:100px;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2%;
+}   
+
+/* Call To Action */
+#cta{
+    background-color: #ff4c68;
+    padding: 10% 7% ;
+    text-align: center;
+}
+.cta-head{
+    font-family: "Montserrat",sans-serif;
+    width: 60%;
+    line-height: 1.5;
+   margin: auto;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    color:white
+}
+
+/* Footer */
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 15% 10% 5%;
+    color:grey;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.icon-foot{
+margin: 10px 10px 20px;
+color: black;
+
+}
+.icon-foot:hover{
+    color:grey
+}
+@media (max-width:1024px){
+    .phonepic {
+   
+        transform: rotate(0deg);
+        position: static;
+    }
+
+    
+}
+
