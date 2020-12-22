@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Day</title>
-</head>
-
+<%- include('header') -%>
 <body>
 
-       <h1>It's a <%= kindofday %></h1>
+       <div class="box" id="heading">
 
-       <ul>
+              <h1>It's a <%= ListTitle %></h1>
+       </div>
+       <div class="box">
+
               <% for (var i=0;i < newListItems.length ;i++) { %>
-              <li><%=newListItems[i] %></li>
+              <div class="item">
+<input type="checkbox">
+                     <p><%=newListItems[i] %></p>
+              </div>
               <% } %>
-       </ul>
-       <form action="/" method="post">
-              <input type="text" name="todo">
-              <button type="submit">Add</button>
 
-       </form>
-
+              <form class="item " action="/" method="post">
+                     <input type="text" name="todo" placeholder="New Item" autocomplete="off">
+                     <button type="submit" name="list" name="list" value=<%=ListTitle%>>+</button>
+                     
+              </form>
+              
+       </div>
 </body>
-
-</html>
+<%- include('footer') -%>
